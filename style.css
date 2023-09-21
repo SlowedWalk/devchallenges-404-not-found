@@ -115,13 +115,13 @@
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    padding-top: 10px;
-    text-align: center;
+    padding-top: 90px;
+    text-align: baseline;
     color: #bdbdbd;
     font-family: JetBrains Mono, serif;
-    font-size: 8px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: normal;
 }
 
