@@ -115,7 +115,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
     color: #bdbdbd;
     font-family: JetBrains Mono, serif;
@@ -123,6 +123,10 @@
     font-style: normal;
     font-weight: 100;
     line-height: normal;
+}
+
+.username {
+    text-decoration: underline;
 }
 
 span {
