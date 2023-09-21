@@ -9,7 +9,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
     width: 100%;
     height: 100%;
 }
@@ -20,16 +19,31 @@
     align-items: center;
     justify-content: center;
     gap: 300px;
+    margin: auto;
     padding-top: 150px;
     width: 100%;
     height: 100%;
 }
 
-.nav-text {
-    display: inline-flex;
-    flex-direction: row;
-    color: #333333;
+.nav {
+    padding-top: 24px;
+    padding-left: 48px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
+    gap: 173px;
+    display: inline-flex
+}
+
+.nax-text {
+    color: black;
+    font-size: 24px;
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
 .side-image {
@@ -101,11 +115,11 @@
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding-top: 10px;
     text-align: center;
     color: #bdbdbd;
     font-family: JetBrains Mono, serif;
-    font-size: 12px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -127,26 +141,42 @@ span {
         font-family: JetBrains Mono, serif;
         align-items: center;
         text-align: center;
+        margin: auto;
     }
 
-    [class*="content"] {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-    }
-}
+    @media only screen and (max-width: 472px) {
+        /* For mobile phones: */
+        [class*="side-image"] {
+            width: 400px;
+            height: 400px;
+        }
 
-@media only screen and (max-width: 1200px) {
-    /* For mobile phones: */
-    [class*="side-image"] {
-        width: 400px;
-        height: 400px;
+        [class*="description"] {
+            font-family: JetBrains Mono, serif;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+
+        [class*="content"] {
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+        }
     }
 
-    [class*="content"] {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
+    @media only screen and (max-width: 1200px) {
+        /* For mobile phones: */
+        [class*="side-image"] {
+            width: 400px;
+            height: 400px;
+        }
+
+        [class*="content"] {
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+        }
     }
 }
 
